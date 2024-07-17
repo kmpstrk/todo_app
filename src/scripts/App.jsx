@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import '../styles/App.css'
 import TodoList from './TodoList'
 import Form from './Form'
