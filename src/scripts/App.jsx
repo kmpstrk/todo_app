@@ -10,10 +10,16 @@ function App() {
     setItems([...items, item]);
   }
 
+  const deleteItem = (item)=>{
+    console.log("item: "+item)
+    const newItems = items.filter(i => i !== item);
+    setItems(newItems);
+  }
+
   return(
     <div>
 
-      <TodoList items={items} />
+      <TodoList items={items} deleteItem={deleteItem}/>
 
       <hr></hr>
       

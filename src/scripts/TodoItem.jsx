@@ -1,11 +1,15 @@
+import { useState } from "react";
 
-function TodoItem({item}){
+function TodoItem({item, deleteItem}){
+
     return(
         <div>
             <label className='label'>
                 <input type='checkbox'className='checkbox'/> {item}
             </label>
-            <button className='deleteBtn'>Delete</button>
+            <button 
+                className='deleteBtn' 
+                onClick={()=> deleteItem(item)}>Delete</button>
         </div>
     )
 }
