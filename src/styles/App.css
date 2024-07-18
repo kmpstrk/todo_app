@@ -1,0 +1,100 @@
+#root {
+  font-weight: 600;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.main{
+  margin-bottom: 25%;
+}
+
+hr{
+  border-top: 2px solid #ebebeb;
+  border-radius: 5px;
+  margin: 24px 0;
+}
+
+.listOfTasks{
+  list-style-type: none;
+  padding:0;
+}
+
+
+.addBtn{
+  background-color: rgb(50, 95, 255);
+  color: rgb(255, 255, 255);
+  margin: 8px 0;
+  box-shadow: 0 2px 4px 0 #6469ff4d;
+  border-radius: 10px;
+}
+
+.addBtn:hover{
+  background-color:  rgb(0, 54, 247);
+  color: white;
+}
+
+#task{
+  margin: 8px 0;
+  width: 100%;
+  border: 1px rgb(202, 204, 210) solid;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.formForTask{
+  display: flex;
+  flex-direction: column;
+}
+
+.formRow{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.deleteBtn{
+  color: rgb(241, 0, 0);
+  background-color: white;
+  border: 1px solid rgb(255, 200, 200);
+  margin: 0 16px ;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.deleteBtn:hover{
+  color:white;
+  background-color:  rgb(255, 78, 78);
+
+}
+
+
+.checkbox{
+  /*appearance: none;*/
+  width: 24px;
+  height: 24px;
+  margin: 16px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 #6469ff4d;
+}
+
+
+.check {
+  position: absolute;
+  color: white;
+  width: 16px;
+  height: 16px;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
