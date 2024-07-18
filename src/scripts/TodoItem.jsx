@@ -1,15 +1,25 @@
 import '../styles/TodoItem.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashAlt } from '@fortawesome/free-regular-svg-icons';
+import { faCheck } from '@fortawesome/free-solid-svg-icons'; // Импорт иконки галочки
 
 function TodoItem({item, deleteItem}){
 
     return(
         <div className='checkboxContainer'>
             <label className='label'>
-                <input type='checkbox'className='checkbox'/> {item.name}
+                <input type='checkbox'className='checkbox'/>
+                <span className='checkmark'>
+                <FontAwesomeIcon icon={faCheck} />
+                </span>
+             {item.name}
             </label>
             <button 
                 className='deleteBtn' 
-                onClick={()=> deleteItem(item.id)}>Delete</button>
+                onClick={()=> deleteItem(item.id)}>
+                <FontAwesomeIcon icon={faTrashAlt} />
+                Delete
+            </button>
         </div>
     )
 }

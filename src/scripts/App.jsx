@@ -17,10 +17,9 @@ function App() {
 
   return(
     <div>
-
+      
       <TodoList items={items} deleteItem={deleteItem}/>
 
-      <hr></hr>
       
       <Form addItem={addItem} />
 

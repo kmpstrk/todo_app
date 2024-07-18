@@ -26,7 +26,7 @@ function Form({addItem}){
                 <label htmlFor='task'>New Task</label>
                 <input 
                     type="text" 
-                    id="task" 
+                    id="taskInput" 
                     value = {inputValue} 
                     onChange= {(event)=>{setInputValue(event.target.value)}}>
                 </input>
