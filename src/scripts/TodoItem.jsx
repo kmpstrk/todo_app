@@ -1,9 +1,9 @@
 
-function TodoItem(){
+function TodoItem({item}){
     return(
         <div>
             <label className='label'>
-                <input type='checkbox'className='checkbox'/>Item 1
+                <input type='checkbox'className='checkbox'/> {item}
             </label>
             <button className='deleteBtn'>Delete</button>
         </div>

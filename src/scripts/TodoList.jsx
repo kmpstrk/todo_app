@@ -1,14 +1,15 @@
 import '../styles/TodoList.css'
 import TodoItem from './TodoItem'
 
-function TodoList(){
+function TodoList({items}){
     return(
     <div className='main'>
         
         <h1 className='header'>Todo List</h1>
-       
+
+        
         <ul className='listOfTasks'>
-            <li> <TodoItem /> </li>
+            {items.map((item, index) => <li key = {index}> <TodoItem item = {item} /> </li> )}
         </ul>
 
     </div>
