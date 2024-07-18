@@ -1,15 +1,15 @@
-import { useState } from "react";
+import '../styles/TodoItem.css'
 
 function TodoItem({item, deleteItem}){
 
     return(
-        <div>
+        <div className='checkboxContainer'>
             <label className='label'>
-                <input type='checkbox'className='checkbox'/> {item}
+                <input type='checkbox'className='checkbox'/> {item.name}
             </label>
             <button 
                 className='deleteBtn' 
-                onClick={()=> deleteItem(item)}>Delete</button>
+                onClick={()=> deleteItem(item.id)}>Delete</button>
         </div>
     )
 }

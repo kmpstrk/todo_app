@@ -1,15 +1,23 @@
 import { useState } from 'react'
 import '../styles/Form.css'
+import { v4 as uuid } from "uuid"
+
 
 
 function Form({addItem}){
 
     const [inputValue, setInputValue] = useState('');
-
+    
     const handleSubmit = (e)=>{
         e.preventDefault();
-        addItem(inputValue);
-        setInputValue('');
+        if(inputValue.trim() !== ''){
+            const newItem = {
+                id: uuid(),
+                name: inputValue,
+              };
+            addItem(newItem);
+            setInputValue('');
+        }
     }
 
     return(

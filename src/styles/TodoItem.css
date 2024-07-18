@@ -1,0 +1,63 @@
+.checkboxContainer{
+  display: inline-flex;
+  align-items: center;
+  margin: 1em;
+}
+
+.deleteBtn{
+    color: rgb(241, 0, 0);
+    background-color: white;
+    border: 1px solid rgb(255, 200, 200);
+    border-radius: 10px;
+    margin: 0 2em ;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.4em 1.2em;
+    font-size: 1em;
+    font-family: inherit;
+    transition: border-color 0.25s;
+  }
+  
+  
+  .deleteBtn:hover{
+    color:white;
+    background-color:  rgb(255, 78, 78);
+  }
+  
+  
+  .checkbox{
+    appearance: none;
+    background-color: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.05em solid #9798be;
+    box-shadow: 0 2px 4px 0 #6469ff4d; 
+    border-radius: 0.15em;
+    place-content: center;
+    cursor: pointer;
+    vertical-align:top;
+  }
+
+  .checkbox:checked {
+    background-color: #6469ff; /* Цвет галочки при активации */
+    border-color: #6469ff;
+  }
+  
+  .checkbox:checked::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    transform: rotate(45deg);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+  }
+  
+
+  
+  .label {
+    margin-left: 0.5em;
+    font: inherit;
+    color: currentColor;
+    word-wrap: break-word;
+  }  

@@ -10,9 +10,8 @@ function App() {
     setItems([...items, item]);
   }
 
-  const deleteItem = (item)=>{
-    console.log("item: "+item)
-    const newItems = items.filter(i => i !== item);
+  const deleteItem = (id)=>{
+    const newItems = items.filter(i => i.id !== id);
     setItems(newItems);
   }
 

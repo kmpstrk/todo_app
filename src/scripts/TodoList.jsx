@@ -9,7 +9,7 @@ function TodoList({items, deleteItem}){
         <h1 className='header'>Todo List</h1>
         
         <ul className='listOfTasks'>
-            {items.map((item, index) => <li key = {index}> <TodoItem item = {item} deleteItem={deleteItem} /> </li> )}
+            {items.map((item) => <li key = {item.id}> <TodoItem item = {item} deleteItem={deleteItem} /> </li> )}
         </ul>
 
     </div>
