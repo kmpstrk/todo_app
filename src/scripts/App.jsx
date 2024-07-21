@@ -10,13 +10,15 @@ function App() {
     setItems([...items, item]);
   }
 
+  const deleteItem = (id)=>{
+    const newItems = items.filter(i => i.id !== id);
+    setItems(newItems);
+  }
+
   return(
-    <div>
-
-      <TodoList items={items} />
-
-      <hr></hr>
+    <div className='mainContainer'>
       
+      <TodoList items={items} deleteItem={deleteItem}/>
       <Form addItem={addItem} />
 
     </div>
