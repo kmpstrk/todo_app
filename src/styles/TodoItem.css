@@ -41,13 +41,6 @@
   transform: scale(0.98);
   background-color:  rgb(234, 65, 65);
 }
-
-  .container {
-    /*
-    display: flex;
-    align-items: center;
-    */
-  }
   
   .checkbox {
     appearance: none;
