@@ -1,43 +1,52 @@
-.checkboxContainer{
-  display: inline-flex;
+.container{
+  /*display: inline-flex;
   align-items: center;
   margin: 1em;
+  */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 1em;
+  grid-gap: 1em;
 }
 
 .deleteBtn{
-    color: rgb(241, 0, 0);
-    background-color: white;
-    border: 1px solid rgb(255, 200, 200);
-    border-radius: 10px;
-    margin: 0 2em ;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    padding: 0.4em 1.2em;
-    font-size: 1em;
-    font-family: inherit;
-    transition: border-color 0.25s;
+  color: rgb(241, 0, 0);
+  background-color: white;
+  border: 1px solid rgb(255, 200, 200);
+  border-radius: 10px;
+  height: 2.3em;
+  width: 100%;
+  width: 7em;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.4em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  transition: border-color 0.25s;
 }
 
 .deleteBtn svg{
   margin-right: 0.5em;
 }
   
-  .deleteBtn:hover{
-    color:white;
-    border: 1px solid rgb(255, 200, 200);
-    background-color:  rgb(255, 78, 78);
-  }
+.deleteBtn:hover{
+  color:white;
+  border: 1px solid rgb(255, 200, 200);
+  background-color:  rgb(255, 78, 78);
+}
 
-  .deleteBtn:active {
-    outline:none;
-    transform: scale(0.98);
-    background-color:  rgb(234, 65, 65);
-  }
+.deleteBtn:active {
+  outline:none;
+  transform: scale(0.98);
+  background-color:  rgb(234, 65, 65);
+}
 
-  .checkboxContainer {
+  .container {
+    /*
     display: flex;
     align-items: center;
+    */
   }
   
   .checkbox {
@@ -49,6 +58,7 @@
   }
   
   .label {
+    /*
     display: flex;
     align-items: center;
     position: relative;
@@ -56,6 +66,14 @@
     font: inherit;
     color: currentColor;
     word-wrap: break-word;
+    */
+    display: grid;
+    grid-template-columns: 1.5em 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:1em;
+    word-wrap: break-word;
+    cursor: pointer;
+    margin: auto 0;
   }
   
   .checkmark {

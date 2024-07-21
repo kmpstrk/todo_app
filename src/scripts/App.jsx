@@ -16,11 +16,9 @@ function App() {
   }
 
   return(
-    <div>
+    <div className='mainContainer'>
       
       <TodoList items={items} deleteItem={deleteItem}/>
-
-      
       <Form addItem={addItem} />
 
     </div>

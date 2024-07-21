@@ -1,9 +1,20 @@
 #root {
-  max-width: 37.5em;
+  max-width: 37em;
+  min-width: 25em;
   margin: 0 auto;
   padding: 2rem;
 }
 
+body{
+  overflow: hidden
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  }
 
 hr{
   border-top: 2px solid #ebebeb;

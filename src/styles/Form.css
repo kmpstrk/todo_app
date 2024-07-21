@@ -1,7 +1,7 @@
 .addBtn{
   background-color: rgb(50, 95, 255);
   color: rgb(255, 255, 255);
-  margin: 0,5em 0;
+  
   box-shadow: 0 2px 4px 0 #6469ff4d;
   border-radius: 10px;
   border: 1px solid transparent;
@@ -29,7 +29,6 @@
 }
 
 #taskInput{
-  margin: 8px 0;
   width: 100%;
   border: 1px rgb(202, 204, 210) solid;
   padding: 12px 20px;
@@ -47,17 +46,26 @@
 }
 
 .formForTask{
+  /*
   display: flex;
   flex-direction: column;
+  */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.6fr;
+  grid-gap: 0.7em;
   position: sticky;
-  bottom: 5%;
-  background-color: white;
-  padding: 2em;
-  border-radius: 10px;
+  bottom: 0;
+  padding: 2em 100%;
+  width: 20em;
 }
 
 .formRow{
+  /*
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  */
+  display:grid;
+  grid-gap: 0.4em;
 }

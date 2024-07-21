@@ -6,7 +6,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'; // Импорт и�
 function TodoItem({item, deleteItem}){
 
     return(
-        <div className='checkboxContainer'>
+        <div className='container'>
             <label className='label'>
                 <input type='checkbox'className='checkbox'/>
                 <span className='checkmark'>

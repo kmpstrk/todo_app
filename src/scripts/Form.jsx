@@ -16,8 +16,8 @@ function Form({addItem}){
                 name: inputValue,
               };
             addItem(newItem);
-            setInputValue('');
         }
+        setInputValue('');
     }
 
     return(
