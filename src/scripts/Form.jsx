@@ -23,7 +23,7 @@ function Form({addItem}){
     return(
         <form className = "formForTask" onSubmit={handleSubmit}>
             <div className='formRow'>
-                <label htmlFor='task'>New Task</label>
+                <label htmlFor='taskInput'>New Task</label>
                 <input 
                     type="text" 
                     id="taskInput" 
