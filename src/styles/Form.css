@@ -1,0 +1,71 @@
+.addBtn{
+  background-color: rgb(50, 95, 255);
+  color: rgb(255, 255, 255);
+  
+  box-shadow: 0 2px 4px 0 #6469ff4d;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.addBtn:hover{
+  background-color:  rgb(0, 54, 247);
+  color: white;
+  outline:none;
+}
+
+.addBtn:active {
+  outline:none;
+  transform: scale(0.98);
+  background-color:  rgb(0, 48, 224);
+}
+
+.addBtn:focus{
+  outline:none;
+}
+
+#taskInput{
+  width: 100%;
+  border: 1px rgb(202, 204, 210) solid;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+#taskInput:hover{
+  box-shadow: 0 2px 4px 0 #6469ff4d;
+}
+
+#taskInput:focus{
+  border-color:rgb(0, 54, 247);
+}
+
+.formForTask{
+  /*
+  display: flex;
+  flex-direction: column;
+  */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.6fr;
+  grid-gap: 0.7em;
+  position: sticky;
+  bottom: 0;
+  padding: 2em 100%;
+  width: 20em;
+}
+
+.formRow{
+  /*
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  */
+  display:grid;
+  grid-gap: 0.4em;
+}

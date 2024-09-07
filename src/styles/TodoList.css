@@ -1,0 +1,42 @@
+
+.main{
+  
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+  
+  }
+
+  
+.listOfTasks{
+  list-style-type: none;
+  padding:0;
+  max-height: 25em;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+
+
+  /* width */
+::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cccdd1;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9296a5;
+}
