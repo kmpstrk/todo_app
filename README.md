@@ -1,4 +1,6 @@
 # Todo App
+Application: https://kmpstrk.github.io/todo_app/
+
 This is a simple yet effective Todo List application built with React and Vite. The app allows users to manage their tasks and persists their todo items using localStorage, ensuring that items remain saved even if the user navigates away or closes the browser.
 
 ## Features
